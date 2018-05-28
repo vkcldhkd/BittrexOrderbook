@@ -1,0 +1,6 @@
+framework module Pods_RequestManagerUITests {
+  umbrella header "Pods-RequestManagerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
