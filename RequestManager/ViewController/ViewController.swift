@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     
     var orderBookModel : OrderBookModel?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
