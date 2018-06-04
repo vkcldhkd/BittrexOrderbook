@@ -1,3 +1,4 @@
+
 //
 //  Dictionary.swift
 //  RequestManager
@@ -19,4 +20,5 @@ extension Dictionary {
         }
         
     }
+
 }
