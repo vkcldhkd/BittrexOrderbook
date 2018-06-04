@@ -1,15 +1,33 @@
 PODS:
-  - Alamofire (4.6.0)
+  - Alamofire (4.7.2)
+  - Differentiator (3.0.2)
   - IJProgressView (0.1.0)
+  - ReactorKit (1.1.0):
+    - RxSwift (>= 4.0.0)
   - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.0.0)
 
 DEPENDENCIES:
   - Alamofire
   - IJProgressView (from `https://github.com/Isuru-Nanayakkara/IJProgressView.git`)
+  - ReactorKit
   - RxCocoa (~> 4.0)
+  - RxDataSources
   - RxSwift (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - Differentiator
+    - ReactorKit
+    - RxCocoa
+    - RxDataSources
+    - RxSwift
 
 EXTERNAL SOURCES:
   IJProgressView:
@@ -21,11 +39,14 @@ CHECKOUT OPTIONS:
     :git: https://github.com/Isuru-Nanayakkara/IJProgressView.git
 
 SPEC CHECKSUMS:
-  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
   IJProgressView: 24ba8bade65ca7d500fc5c74c8d48e5cf2f3f246
+  ReactorKit: 26470a9eff5094fae909a30af0be7cd0cf8a182d
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
 
-PODFILE CHECKSUM: 483f83b940eec1ba0f543635207dd201c2dc2d93
+PODFILE CHECKSUM: f19664886cbb24b283218ac6b78d7408cc3c6079
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.0

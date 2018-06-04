@@ -7,9 +7,12 @@ target 'RequestManager' do
 
   # Pods for RequestManager
     pod 'Alamofire'
+    pod 'ReactorKit'
     pod 'RxSwift',    '~> 4.0'
     pod 'RxCocoa',    '~> 4.0'
     pod 'IJProgressView', :git => 'https://github.com/Isuru-Nanayakkara/IJProgressView.git'
+    pod 'RxDataSources'
+
 
   target 'RequestManagerTests' do
     inherit! :search_paths

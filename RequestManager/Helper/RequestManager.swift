@@ -5,7 +5,6 @@
 //  Created by Sung Hyun on 2018. 5. 28..
 //  Copyright © 2018년 Sung Hyun. All rights reserved.
 //
-
 import Foundation
 import Alamofire
 import IJProgressView
@@ -191,4 +190,3 @@ class Retrier: RequestRetrier {
         }
     }
 }
-
