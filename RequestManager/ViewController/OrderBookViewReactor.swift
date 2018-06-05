@@ -23,8 +23,7 @@ final class OrderBookViewReactor : Reactor{
     
     // State is a current view state
     struct State {
-        var sellArray : [Coin] = []
-        var buyArray : [Coin] = []
+        var arrays : ([Coin],[Coin]) = ([],[])
         
     }
     
@@ -45,9 +44,8 @@ final class OrderBookViewReactor : Reactor{
         
         switch mutation {
         case let .setArray(sell,buy) :
-            state.sellArray = sell
-            state.buyArray = buy
-            
+            state.arrays.0 = sell
+            state.arrays.1 = buy
         }
         
         return state

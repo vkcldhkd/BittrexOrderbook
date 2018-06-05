@@ -28,6 +28,8 @@
 		A3536E0B20BFBB0800B6BA72 /* OrderBookSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3536E0A20BFBB0800B6BA72 /* OrderBookSection.swift */; };
 		A3536E0D20BFD0A700B6BA72 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3536E0C20BFD0A700B6BA72 /* RequestManager.swift */; };
 		A3536E0F20BFD0BE00B6BA72 /* DataResponser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3536E0E20BFD0BE00B6BA72 /* DataResponser.swift */; };
+		A377093A20C53B7C0030A67E /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A377093920C53B7C0030A67E /* ItemTableViewCell.swift */; };
+		A3D399A020C6243D000D5D8B /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D3999F20C6243D000D5D8B /* UIColor.swift */; };
 		C138C5A0AFE91CF376C47D2A /* Pods_RequestManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15DAE2FB51BB9CCCC835055 /* Pods_RequestManagerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +82,8 @@
 		A3536E0A20BFBB0800B6BA72 /* OrderBookSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBookSection.swift; sourceTree = "<group>"; };
 		A3536E0C20BFD0A700B6BA72 /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		A3536E0E20BFD0BE00B6BA72 /* DataResponser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataResponser.swift; sourceTree = "<group>"; };
+		A377093920C53B7C0030A67E /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		A3D3999F20C6243D000D5D8B /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		E15DAE2FB51BB9CCCC835055 /* Pods_RequestManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RequestManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2599A86DAA46D24F886C7B3 /* Pods-RequestManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RequestManagerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RequestManagerUITests/Pods-RequestManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FA0137B25E960A89D09C395F /* Pods-RequestManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RequestManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RequestManager/Pods-RequestManager.debug.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +156,7 @@
 				8A79252220BC2B8600733A6D /* Extension */,
 				8A79251A20BC292800733A6D /* Helper */,
 				8A79251C20BC295000733A6D /* ViewController */,
+				A377093820C53B640030A67E /* View */,
 				8A79251D20BC296E00733A6D /* Storyboard */,
 				8A79251B20BC293400733A6D /* SupportingFiles */,
 			);
@@ -223,6 +228,7 @@
 			children = (
 				8A79252320BC2B9100733A6D /* UIApplication.swift */,
 				8A79253320BC34D000733A6D /* Dictionary.swift */,
+				A3D3999F20C6243D000D5D8B /* UIColor.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -234,6 +240,14 @@
 				A3536E0A20BFBB0800B6BA72 /* OrderBookSection.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A377093820C53B640030A67E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A377093920C53B7C0030A67E /* ItemTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B2E2E93B4A5904996E9CB2D9 /* Pods */ = {
@@ -479,8 +493,10 @@
 				A3536E0D20BFD0A700B6BA72 /* RequestManager.swift in Sources */,
 				8A79252D20BC323500733A6D /* TimerHelper.swift in Sources */,
 				8A79253420BC34D000733A6D /* Dictionary.swift in Sources */,
+				A3D399A020C6243D000D5D8B /* UIColor.swift in Sources */,
 				A3536E0F20BFD0BE00B6BA72 /* DataResponser.swift in Sources */,
 				8A7924ED20BC288500733A6D /* AppDelegate.swift in Sources */,
+				A377093A20C53B7C0030A67E /* ItemTableViewCell.swift in Sources */,
 				8A79252920BC2CA700733A6D /* LogHelper.swift in Sources */,
 				8A79253220BC33E900733A6D /* OrderBookModel.swift in Sources */,
 				8A79252420BC2B9100733A6D /* UIApplication.swift in Sources */,
