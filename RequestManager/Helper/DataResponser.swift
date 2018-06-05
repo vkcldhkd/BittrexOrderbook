@@ -17,23 +17,17 @@ class DataResponser {
         return URLSession.shared.rx.json(url: url)
             .map { json -> (Result) in
                 guard let dict = json as? [String: Any] ,
-                let jsonData = dict.jsonToString().data(using: .utf8),
-                let model = (try? JSONDecoder().decode(OrderBookModel.self, from: jsonData)),
-                let result = model.result else { return emptyResult }
+                    let jsonData = dict.jsonToString().data(using: .utf8),
+                    let model = (try? JSONDecoder().decode(OrderBookModel.self, from: jsonData)),
+                    let result = model.result else { return emptyResult }
                 
                 return result
             }
             .do(onError: { error in
                 if case let .some(.httpRequestFailed(response, _)) = error as? RxCocoaURLError, response.statusCode == 403 {
-                    print("⚠️ Bittrex API rate limit exceeded. Wait for 60 seconds and try again.")
+                    LogHelper.printLog("⚠️ Bittrex API rate limit exceeded. Wait for 60 seconds and try again.")
                 }
             })
             .catchErrorJustReturn(emptyResult)
-        
-        //        RequestManager.postRequest(url: Constants_apis.GET_USDT_BTC_ORDERBOOK(), param: [:]) { (json) in
-        //            LogHelper.printLog("orderbook json : \(json)")
-        //            guard let json = json ,
-        //                let jsonData = json.jsonToString().data(using: .utf8) else { return }
-        //            return (try? JSONDecoder().decode(OrderBookModel.self, from: jsonData))
     }
 }
