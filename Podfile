@@ -6,7 +6,7 @@ target 'RequestManager' do
   use_frameworks!
 
   # Pods for RequestManager
-    pod 'Alamofire'
+    pod 'RxAlamofire'
     pod 'ReactorKit'
     pod 'RxSwift',    '~> 4.0'
     pod 'RxCocoa',    '~> 4.0'
