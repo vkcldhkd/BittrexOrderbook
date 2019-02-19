@@ -8,10 +8,9 @@ target 'RequestManager' do
   # Pods for RequestManager
     pod 'RxAlamofire'
     pod 'ReactorKit'
-    pod 'RxSwift',    '~> 4.0'
-    pod 'RxCocoa',    '~> 4.0'
-    pod 'IJProgressView', :git => 'https://github.com/Isuru-Nanayakkara/IJProgressView.git'
-    pod 'RxDataSources'
+    pod 'RxSwift'
+    pod 'RxCocoa'
+
 
 
   target 'RequestManagerTests' do

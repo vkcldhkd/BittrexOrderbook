@@ -1,59 +1,41 @@
 PODS:
-  - Alamofire (4.7.2)
-  - Differentiator (3.0.2)
-  - IJProgressView (0.1.0)
-  - ReactorKit (1.1.0):
+  - Alamofire (4.8.1)
+  - ReactorKit (1.2.1):
     - RxSwift (>= 4.0.0)
-  - RxAlamofire (4.2.0):
-    - RxAlamofire/Core (= 4.2.0)
-  - RxAlamofire/Core (4.2.0):
+  - RxAlamofire (4.3.0):
+    - RxAlamofire/Core (= 4.3.0)
+  - RxAlamofire/Core (4.3.0):
     - Alamofire (~> 4.5)
     - RxSwift (~> 4)
-  - RxCocoa (4.0.0):
+  - RxAtomic (4.4.1)
+  - RxCocoa (4.4.1):
     - RxSwift (~> 4.0)
-  - RxDataSources (3.0.2):
-    - Differentiator (~> 3.0)
-    - RxCocoa (~> 4.0)
-    - RxSwift (~> 4.0)
-  - RxSwift (4.0.0)
+  - RxSwift (4.4.1):
+    - RxAtomic (~> 4.4)
 
 DEPENDENCIES:
-  - IJProgressView (from `https://github.com/Isuru-Nanayakkara/IJProgressView.git`)
   - ReactorKit
   - RxAlamofire
-  - RxCocoa (~> 4.0)
-  - RxDataSources
-  - RxSwift (~> 4.0)
+  - RxCocoa
+  - RxSwift
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
-    - Differentiator
     - ReactorKit
     - RxAlamofire
+    - RxAtomic
     - RxCocoa
-    - RxDataSources
     - RxSwift
 
-EXTERNAL SOURCES:
-  IJProgressView:
-    :git: https://github.com/Isuru-Nanayakkara/IJProgressView.git
-
-CHECKOUT OPTIONS:
-  IJProgressView:
-    :commit: c109fd215ffb1168a362406edc69707d5e30dd6b
-    :git: https://github.com/Isuru-Nanayakkara/IJProgressView.git
-
 SPEC CHECKSUMS:
-  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
-  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
-  IJProgressView: 24ba8bade65ca7d500fc5c74c8d48e5cf2f3f246
-  ReactorKit: 26470a9eff5094fae909a30af0be7cd0cf8a182d
-  RxAlamofire: 87a9c588541210cc3e4a1f843ccc3ecf3eb98b31
-  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
-  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
-  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  ReactorKit: 8be57f0527ad1ac2963cd5c338274a46a01e57a3
+  RxAlamofire: 09624d0f2d48ed8b686e4eb4cf68e28cbd2df556
+  RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
+  RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
+  RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
 
-PODFILE CHECKSUM: 9e0b3c947986c62035c935a0a9eff8387868325a
+PODFILE CHECKSUM: de58625da32e96a80fd66b9f13ad85f0724984d4
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.6.0
