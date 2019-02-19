@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/a1/Desktop/Workspace/RequestManager/BittrexOrderbook.xcodeproj">
+      location = "group:BittrexOrderbook.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
