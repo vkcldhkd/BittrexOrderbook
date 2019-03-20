@@ -45,7 +45,6 @@ extension OrderBookViewController : StoryboardView{
          * orderbook을 1초마다 받아오기 위한 타이머 Action.
          */
         Observable<Int>.interval(1, scheduler: MainScheduler.asyncInstance)
-            .share()
             .map{ _ in Reactor.Action.update }
             .bind(to : reactor.action)
             .disposed(by: self.disposeBag)
@@ -54,8 +53,9 @@ extension OrderBookViewController : StoryboardView{
         
         reactor.state.map { $0.arrays }
             .filter{ !$0.0.isEmpty && !$0.1.isEmpty}
-            .share()
-            .subscribe(onNext: { (arrays) in
+            .subscribe(onNext: { [weak self] arrays in
+                guard let self = self else { return }
+                
                 self.arrays.sell = arrays.0.reversed()
                 self.arrays.buy = arrays.1
                 
@@ -69,7 +69,8 @@ extension OrderBookViewController : StoryboardView{
         
         self.orderBookTableView.rx.itemSelected
             .subscribe(onNext: { [weak self] indexPath in
-                guard let `self` = self else { return }
+                guard let self = self else { return }
+                
                 self.view.endEditing(true)
                 self.orderBookTableView.deselectRow(at: indexPath, animated: false)
                 
