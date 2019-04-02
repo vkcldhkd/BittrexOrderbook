@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45612213B85664DCE840B399 /* Pods_BittrexOrderbookUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D195F880BB50DC09CF8FC9C4 /* Pods_BittrexOrderbookUITests.framework */; };
 		5B11D72D78537209D7DD0431 /* Pods_RequestManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BCCB86D8D8B72961F4FC6C6 /* Pods_RequestManagerUITests.framework */; };
 		6624BF0BB36E5CCFC345DE31 /* Pods_RequestManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466838438F4EA897CB3527EB /* Pods_RequestManager.framework */; };
 		8A7924ED20BC288500733A6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7924EC20BC288500733A6D /* AppDelegate.swift */; };
@@ -29,7 +30,9 @@
 		A377093A20C53B7C0030A67E /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A377093920C53B7C0030A67E /* ItemTableViewCell.swift */; };
 		A3D399A020C6243D000D5D8B /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D3999F20C6243D000D5D8B /* UIColor.swift */; };
 		A3D399A220C629F7000D5D8B /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D399A120C629F7000D5D8B /* RequestManager.swift */; };
+		B892B6A4B86F17BC9B105DBC /* Pods_BittrexOrderbook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AC4C5E6E6BF5D31563E1387 /* Pods_BittrexOrderbook.framework */; };
 		C138C5A0AFE91CF376C47D2A /* Pods_RequestManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E15DAE2FB51BB9CCCC835055 /* Pods_RequestManagerTests.framework */; };
+		F2542C629FB3D2C3D079E5AD /* Pods_BittrexOrderbookTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71FD4B7474F6A83BEEE2EFFB /* Pods_BittrexOrderbookTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,10 +53,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		137DC8783B6C5F141A4C9445 /* Pods-BittrexOrderbook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BittrexOrderbook.release.xcconfig"; path = "Pods/Target Support Files/Pods-BittrexOrderbook/Pods-BittrexOrderbook.release.xcconfig"; sourceTree = "<group>"; };
+		15ECF4B190C6D7F100C96A10 /* Pods-BittrexOrderbookTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BittrexOrderbookTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BittrexOrderbookTests/Pods-BittrexOrderbookTests.release.xcconfig"; sourceTree = "<group>"; };
+		1EBA0DDAD3A983B76EEC055C /* Pods-BittrexOrderbookUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BittrexOrderbookUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BittrexOrderbookUITests/Pods-BittrexOrderbookUITests.release.xcconfig"; sourceTree = "<group>"; };
 		466838438F4EA897CB3527EB /* Pods_RequestManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RequestManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F9B0F4CD9764C6DFB669D6 /* Pods-RequestManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RequestManagerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RequestManagerUITests/Pods-RequestManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5AC4C5E6E6BF5D31563E1387 /* Pods_BittrexOrderbook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BittrexOrderbook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B3DA423C87954E3426C1799 /* Pods-BittrexOrderbook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BittrexOrderbook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BittrexOrderbook/Pods-BittrexOrderbook.debug.xcconfig"; sourceTree = "<group>"; };
 		5DD2F87C5389A082A7EF9211 /* Pods-RequestManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RequestManagerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RequestManagerTests/Pods-RequestManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7107C7EEBFFCF1C9E88610C5 /* Pods-RequestManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RequestManager.release.xcconfig"; path = "Pods/Target Support Files/Pods-RequestManager/Pods-RequestManager.release.xcconfig"; sourceTree = "<group>"; };
+		71FD4B7474F6A83BEEE2EFFB /* Pods_BittrexOrderbookTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BittrexOrderbookTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F62B817AB5AB62049E84E1 /* Pods-RequestManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RequestManagerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RequestManagerTests/Pods-RequestManagerTests.release.xcconfig"; sourceTree = "<group>"; };
 		8A7924E920BC288500733A6D /* BittrexOrderbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BittrexOrderbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A7924EC20BC288500733A6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,8 +91,11 @@
 		A377093920C53B7C0030A67E /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		A3D3999F20C6243D000D5D8B /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		A3D399A120C629F7000D5D8B /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		B228778667A15CB04E113D66 /* Pods-BittrexOrderbookUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BittrexOrderbookUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BittrexOrderbookUITests/Pods-BittrexOrderbookUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D195F880BB50DC09CF8FC9C4 /* Pods_BittrexOrderbookUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BittrexOrderbookUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15DAE2FB51BB9CCCC835055 /* Pods_RequestManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RequestManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2599A86DAA46D24F886C7B3 /* Pods-RequestManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RequestManagerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RequestManagerUITests/Pods-RequestManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F19BAAE304C08231D4860256 /* Pods-BittrexOrderbookTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BittrexOrderbookTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BittrexOrderbookTests/Pods-BittrexOrderbookTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FA0137B25E960A89D09C395F /* Pods-RequestManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RequestManager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RequestManager/Pods-RequestManager.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6624BF0BB36E5CCFC345DE31 /* Pods_RequestManager.framework in Frameworks */,
+				B892B6A4B86F17BC9B105DBC /* Pods_BittrexOrderbook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +114,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C138C5A0AFE91CF376C47D2A /* Pods_RequestManagerTests.framework in Frameworks */,
+				F2542C629FB3D2C3D079E5AD /* Pods_BittrexOrderbookTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +123,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B11D72D78537209D7DD0431 /* Pods_RequestManagerUITests.framework in Frameworks */,
+				45612213B85664DCE840B399 /* Pods_BittrexOrderbookUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +136,9 @@
 				466838438F4EA897CB3527EB /* Pods_RequestManager.framework */,
 				E15DAE2FB51BB9CCCC835055 /* Pods_RequestManagerTests.framework */,
 				9BCCB86D8D8B72961F4FC6C6 /* Pods_RequestManagerUITests.framework */,
+				5AC4C5E6E6BF5D31563E1387 /* Pods_BittrexOrderbook.framework */,
+				71FD4B7474F6A83BEEE2EFFB /* Pods_BittrexOrderbookTests.framework */,
+				D195F880BB50DC09CF8FC9C4 /* Pods_BittrexOrderbookUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -259,6 +277,12 @@
 				81F62B817AB5AB62049E84E1 /* Pods-RequestManagerTests.release.xcconfig */,
 				58F9B0F4CD9764C6DFB669D6 /* Pods-RequestManagerUITests.debug.xcconfig */,
 				E2599A86DAA46D24F886C7B3 /* Pods-RequestManagerUITests.release.xcconfig */,
+				5B3DA423C87954E3426C1799 /* Pods-BittrexOrderbook.debug.xcconfig */,
+				137DC8783B6C5F141A4C9445 /* Pods-BittrexOrderbook.release.xcconfig */,
+				F19BAAE304C08231D4860256 /* Pods-BittrexOrderbookTests.debug.xcconfig */,
+				15ECF4B190C6D7F100C96A10 /* Pods-BittrexOrderbookTests.release.xcconfig */,
+				B228778667A15CB04E113D66 /* Pods-BittrexOrderbookUITests.debug.xcconfig */,
+				1EBA0DDAD3A983B76EEC055C /* Pods-BittrexOrderbookUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -275,6 +299,7 @@
 				8A7924E620BC288500733A6D /* Frameworks */,
 				8A7924E720BC288500733A6D /* Resources */,
 				AC18F6A7FE440A7D32AADCF3 /* [CP] Embed Pods Frameworks */,
+				7163517BD976CB263B05FBE6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -293,6 +318,8 @@
 				8A7924F920BC288500733A6D /* Sources */,
 				8A7924FA20BC288500733A6D /* Frameworks */,
 				8A7924FB20BC288500733A6D /* Resources */,
+				72EB3EDB8C1918836F288A11 /* [CP] Embed Pods Frameworks */,
+				78BEB0397C451A3178DE2642 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -312,6 +339,8 @@
 				8A79250420BC288500733A6D /* Sources */,
 				8A79250520BC288500733A6D /* Frameworks */,
 				8A79250620BC288500733A6D /* Resources */,
+				A44860EF5F8DFC80AF5DCA4A /* [CP] Embed Pods Frameworks */,
+				91E0C73D3E35632599C8A976 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -408,7 +437,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RequestManager-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BittrexOrderbook-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -426,11 +455,106 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RequestManagerTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BittrexOrderbookTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7163517BD976CB263B05FBE6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BittrexOrderbook/Pods-BittrexOrderbook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72EB3EDB8C1918836F288A11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BittrexOrderbookTests/Pods-BittrexOrderbookTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78BEB0397C451A3178DE2642 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BittrexOrderbookTests/Pods-BittrexOrderbookTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91E0C73D3E35632599C8A976 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BittrexOrderbookUITests/Pods-BittrexOrderbookUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A44860EF5F8DFC80AF5DCA4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BittrexOrderbookUITests/Pods-BittrexOrderbookUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AC18F6A7FE440A7D32AADCF3 /* [CP] Embed Pods Frameworks */ = {
@@ -439,11 +563,10 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RequestManager/Pods-RequestManager-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-BittrexOrderbook/Pods-BittrexOrderbook-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactorKit/ReactorKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
@@ -452,13 +575,12 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactorKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RequestManager/Pods-RequestManager-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BittrexOrderbook/Pods-BittrexOrderbook-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FE7CFBFA1CFF18CD2C210DEA /* [CP] Check Pods Manifest.lock */ = {
@@ -472,7 +594,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RequestManagerUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BittrexOrderbookUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -605,7 +727,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -658,7 +780,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -668,7 +790,7 @@
 		};
 		8A79251220BC288500733A6D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA0137B25E960A89D09C395F /* Pods-RequestManager.debug.xcconfig */;
+			baseConfigurationReference = 5B3DA423C87954E3426C1799 /* Pods-BittrexOrderbook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -678,14 +800,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sung9.BittrexOrderbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8A79251320BC288500733A6D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7107C7EEBFFCF1C9E88610C5 /* Pods-RequestManager.release.xcconfig */;
+			baseConfigurationReference = 137DC8783B6C5F141A4C9445 /* Pods-BittrexOrderbook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -695,14 +817,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Sung9.BittrexOrderbook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		8A79251520BC288500733A6D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DD2F87C5389A082A7EF9211 /* Pods-RequestManagerTests.debug.xcconfig */;
+			baseConfigurationReference = F19BAAE304C08231D4860256 /* Pods-BittrexOrderbookTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -712,7 +834,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sung-Hyun.RequestManagerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BittrexOrderbook.app/BittrexOrderbook";
 			};
@@ -720,7 +842,7 @@
 		};
 		8A79251620BC288500733A6D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81F62B817AB5AB62049E84E1 /* Pods-RequestManagerTests.release.xcconfig */;
+			baseConfigurationReference = 15ECF4B190C6D7F100C96A10 /* Pods-BittrexOrderbookTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -730,7 +852,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sung-Hyun.RequestManagerTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BittrexOrderbook.app/BittrexOrderbook";
 			};
@@ -738,7 +860,7 @@
 		};
 		8A79251820BC288500733A6D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58F9B0F4CD9764C6DFB669D6 /* Pods-RequestManagerUITests.debug.xcconfig */;
+			baseConfigurationReference = B228778667A15CB04E113D66 /* Pods-BittrexOrderbookUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -747,7 +869,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sung-Hyun.RequestManagerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = RequestManager;
 			};
@@ -755,7 +877,7 @@
 		};
 		8A79251920BC288500733A6D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2599A86DAA46D24F886C7B3 /* Pods-RequestManagerUITests.release.xcconfig */;
+			baseConfigurationReference = 1EBA0DDAD3A983B76EEC055C /* Pods-BittrexOrderbookUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -764,7 +886,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Sung-Hyun.RequestManagerUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = RequestManager;
 			};

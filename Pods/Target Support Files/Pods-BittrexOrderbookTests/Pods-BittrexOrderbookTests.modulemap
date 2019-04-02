@@ -1,0 +1,6 @@
+framework module Pods_BittrexOrderbookTests {
+  umbrella header "Pods-BittrexOrderbookTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
