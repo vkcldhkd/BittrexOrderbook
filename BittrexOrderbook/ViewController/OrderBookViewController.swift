@@ -10,7 +10,7 @@ import UIKit
 import ReactorKit
 import RxCocoa
 import RxSwift
-
+import RxDataSources
 
 
 
@@ -21,7 +21,7 @@ class OrderBookViewController: UIViewController {
     
     
     var disposeBag = DisposeBag()
-    var arrays : (sell:[Coin],buy:[Coin]) = ([],[])
+    var sections = PublishSubject<[SectionOfCoin]>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +34,27 @@ class OrderBookViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 }
+extension OrderBookViewController{
+    func dataSource() -> RxTableViewSectionedReloadDataSource<SectionOfCoin> {
+        return RxTableViewSectionedReloadDataSource<SectionOfCoin>(
+            configureCell: { (dataSource, tableView, indexPath, model) -> UITableViewCell in
+                switch indexPath.section{
+                case 0:
+                    let cell = tableView.dequeueReusableCell(withIdentifier: "TitleCell", for: indexPath)
+                    return cell
+                    
+                default:
+                    guard let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCell", for: indexPath) as? ItemTableViewCell else { return ItemTableViewCell() }
+                    
+                    
+                    let bgColor = indexPath.section == 1 ? UIColor(hex: "#FCEBEB") : UIColor(hex: "#F0F9FF")
+                    cell.setView(isSell: indexPath.section == 1 , backgroundColor: bgColor, rate: model.rate, quantity: model.quantity)
+                    
+                    return cell
+                }
+        })
+    }
+}
 
 
 extension OrderBookViewController : StoryboardView{
@@ -44,28 +65,45 @@ extension OrderBookViewController : StoryboardView{
         /**
          * orderbook을 1초마다 받아오기 위한 타이머 Action.
          */
-        Observable<Int>.interval(1, scheduler: MainScheduler.asyncInstance)
+        
+        Observable<Int>.interval(1, scheduler: ConcurrentDispatchQueueScheduler(qos: .background))
             .map{ _ in Reactor.Action.update }
             .bind(to : reactor.action)
             .disposed(by: self.disposeBag)
         
         // State
         
-        reactor.state.map { $0.arrays }
-            .filter{ !$0.0.isEmpty && !$0.1.isEmpty}
-            .subscribe(onNext: { [weak self] arrays in
-                guard let self = self else { return }
-                
-                self.arrays.sell = arrays.0.reversed()
-                self.arrays.buy = arrays.1
-                
-                DispatchQueue.main.async {
-                    self.orderBookTableView.reloadData()
-                }
-
-            }).disposed(by: self.disposeBag)
+        let dataSource = self.dataSource()
+        sections.asObservable()
+            .bind(to: orderBookTableView.rx.items(dataSource: dataSource))
+            .disposed(by: disposeBag)
         
-        // View
+        let sell = reactor.state.map { $0.sellItems }
+            .distinctUntilChanged()
+            .filter{ $0.items.count > 5 }
+            .map{ Array($0.items[0..<5]) }
+        
+        let buy = reactor.state.map { $0.buyItems }
+            .distinctUntilChanged()
+            .filter{ $0.items.count > 5 }
+            .map{ Array($0.items[0..<5]) }
+        
+        Observable.combineLatest(sell,buy)
+            .map{ tuple -> [SectionOfCoin] in
+                var sectionArray: [SectionOfCoin] = []
+                sectionArray.append(SectionOfCoin(items: []))
+                sectionArray.append(SectionOfCoin(items: tuple.0))
+                sectionArray.append(SectionOfCoin(items: tuple.1))
+                return sectionArray
+            }
+            .bind(to: self.sections)
+            .disposed(by: disposeBag)
+        
+        // TableView
+        self.orderBookTableView.rx.setDelegate(self)
+            .disposed(by: self.disposeBag)
+        
+        
         
         self.orderBookTableView.rx.itemSelected
             .subscribe(onNext: { [weak self] indexPath in
@@ -83,39 +121,9 @@ extension OrderBookViewController : StoryboardView{
     }
 }
 
-extension OrderBookViewController : UITableViewDelegate, UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
-    }
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return section == 0 ? 1 : 5
-    }
+extension OrderBookViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return self.orderBookTableView.frame.height / 11
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch indexPath.section {
-        case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TitleCell", for: indexPath)
-            return cell
-
-        default:
-            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCell", for: indexPath) as? ItemTableViewCell else { return ItemTableViewCell() }
-
-            if self.arrays.buy.count > indexPath.row && self.arrays.sell.count > indexPath.row {
-                if indexPath.section == 1 {
-                    cell.setView(isSell: true, backgroundColor: UIColor(hex: "#FCEBEB"), rate: self.arrays.sell[indexPath.row].rate, quantity: self.arrays.sell[indexPath.row].quantity)
-
-                }else{
-                    cell.setView(isSell: false, backgroundColor: UIColor(hex: "#F0F9FF"), rate: self.arrays.buy[indexPath.row].rate, quantity: self.arrays.buy[indexPath.row].quantity)
-                }
-            }
-
-            return cell
-        }
-
     }
 }
 

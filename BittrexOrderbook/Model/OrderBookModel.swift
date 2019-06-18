@@ -19,7 +19,7 @@ struct Result: Codable {
     let buy, sell: [Coin]?
 }
 
-struct Coin: Codable {
+struct Coin: Codable,Equatable {
     let quantity, rate: Double
     
     enum CodingKeys: String, CodingKey {

@@ -1,7 +1,7 @@
 <img alt="ReactorKit" src="https://cloud.githubusercontent.com/assets/931655/25277625/6aa05998-26da-11e7-9b85-e48bec938a6e.png" style="max-width: 100%">
 
 <p align="center">
-  <img alt="Swift" src="https://img.shields.io/badge/Swift-4.2-orange.svg">
+  <img alt="Swift" src="https://img.shields.io/badge/Swift-5.0-orange.svg">
   <a href="https://cocoapods.org/pods/ReactorKit" target="_blank">
     <img alt="CocoaPods" src="http://img.shields.io/cocoapods/v/ReactorKit.svg">
   </a>
@@ -356,14 +356,15 @@ func testIsLoading() {
 * [Drrrible](https://github.com/devxoul/Drrrible): Dribbble for iOS using ReactorKit ([App Store](https://itunes.apple.com/us/app/drrrible/id1229592223?mt=8))
 * [Passcode](https://github.com/cruisediary/Passcode): Passcode for iOS RxSwift, ReactorKit and IGListKit example
 * [Flickr Search](https://github.com/TaeJoongYoon/FlickrSearch): A simple application which provides a Flickr Photo search with RxSwift and ReactorKit
+* [ReactorKitExample](https://github.com/gre4ixin/ReactorKitExample)
 
 ## Dependencies
 
-* [RxSwift](https://github.com/ReactiveX/RxSwift) >= 4.0
+* [RxSwift](https://github.com/ReactiveX/RxSwift) >= 5.0
 
 ## Requirements
 
-* Swift 4
+* Swift 5
 * iOS 8
 * macOS 10.11
 * tvOS 9.0
@@ -383,8 +384,8 @@ ReactorKit does not officially support Carthage.
 
 **Cartfile**
 
-```ruby
-github 'ReactorKit/ReactorKit'
+```swift
+github "ReactorKit/ReactorKit"
 ```
 
 Most Carthage installation issues can be resolved with the following:
@@ -412,8 +413,14 @@ Any discussions and pull requests are welcomed 💖
 
 ## Community
 
+### Join
+
 * **English**: Join [#reactorkit](https://rxswift.slack.com/messages/C561PETRN/) on [RxSwift Slack](http://rxswift-slack.herokuapp.com/)
 * **Korean**: Join [#reactorkit](https://swiftkorea.slack.com/messages/C568YM2RF/) on [Swift Korea Slack](http://slack.swiftkorea.org/)
+
+### Community Projects
+
+* [ReactorKit-Template](https://github.com/gre4ixin/ReactorKit-Template)
 
 ## Who's using ReactorKit
 
@@ -425,7 +432,9 @@ Any discussions and pull requests are welcomed 💖
   <br><br>
   <a href="http://getdoctalk.com"><img align="center" height="48" alt="DocTalk" hspace="15" src="https://user-images.githubusercontent.com/931655/30633896-503d142c-9e28-11e7-8e67-69c2822efe77.png"></a>
   <a href="https://www.constantcontact.com"><img align="center" height="44" alt="Constant Contact" hspace="15" src="https://user-images.githubusercontent.com/931655/43634090-2cb30c7e-9746-11e8-8e18-e4fcf87a08cc.png"></a>
-  <a href="https://www.kt.com"><img align="center" height="42" alt="Wantedly" hspace="15" src="https://user-images.githubusercontent.com/931655/43634093-2ec9e94c-9746-11e8-9213-75c352e0c147.png"></a>
+  <a href="https://www.kt.com"><img align="center" height="42" alt="KT" hspace="15" src="https://user-images.githubusercontent.com/931655/43634093-2ec9e94c-9746-11e8-9213-75c352e0c147.png"></a>
+  <br><br>
+  <a href="https://hyperconnect.com/"><img align="center" height="48" alt="Hyperconnect" hspace="15" src="https://user-images.githubusercontent.com/931655/50819891-aa89d200-136e-11e9-8b19-780e64e54b2a.png"></a>
   <br><br>
 </p>
 

@@ -8,6 +8,7 @@
 
 import UIKit
 import RxSwift
+import RxOptional
 
 class ItemTableViewCell: UITableViewCell {
     
@@ -34,27 +35,38 @@ class ItemTableViewCell: UITableViewCell {
 extension ItemTableViewCell {
     func setView(isSell: Bool, backgroundColor: UIColor, rate: Double?, quantity: Double?){
         
-        self.backgroundColor = backgroundColor
+        Observable.just(backgroundColor)
+        .bind(to: self.rx.backgroundColor)
+        .disposed(by: disposeBag)
+        
         
         self.priceTextField.rx.text.asObservable()
             .distinctUntilChanged()
-            .share()
-            .subscribe(onNext: { [weak self] text in
+            .filter{ "\(rate ?? 0.0)" != $0 }
+            .observeOn(MainScheduler.asyncInstance)
+            .subscribe(onNext: { [weak self] _ in
                 guard let self = self else { return }
-                
-                if text != "\(rate ?? 0.0)"{
-                    DispatchQueue.main.async {
-                        UIView.animate(withDuration: 1.0, animations: {
-                            self.backgroundColor = isSell ? .red : .blue
-                            self.backgroundColor = backgroundColor
-                        })
-                    }
-                }
+                UIView.animate(withDuration: 1.0, animations: {
+                    self.backgroundColor = isSell ? .red : .blue
+                    self.backgroundColor = backgroundColor
+                })
             })
             .disposed(by: self.disposeBag)
         
+        Observable.just(rate)
+            .filterNil()
+            .map{ "\($0)" }
+            .bind(to: priceTextField.rx.text)
+            .disposed(by: disposeBag)
         
-        self.priceTextField.text = "\(rate ?? 0.0)"
-        self.amountTextField.text = "\(quantity ?? 0.0)"
+        
+        Observable.just(quantity)
+            .filterNil()
+            .map{ "\($0)" }
+            .bind(to: amountTextField.rx.text)
+            .disposed(by: disposeBag)
+        
+        
+
     }
 }

@@ -18,12 +18,13 @@ final class OrderBookViewReactor : Reactor{
     
     // Mutate is a state manipulator which is not exposed to a view
     enum Mutation{
-        case setArray([Coin],buyArray: [Coin])
+        case setCoins(sell: [Coin]?, buy: [Coin]?)
     }
     
     // State is a current view state
     struct State {
-        var arrays : ([Coin],[Coin]) = ([],[])
+        var sellItems = SectionOfCoin(items: [])
+        var buyItems = SectionOfCoin(items: [])
         
     }
     
@@ -34,20 +35,31 @@ final class OrderBookViewReactor : Reactor{
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
         case .update:
-            return DataResponser.getOrderBook().map{ Mutation.setArray($0.sell!, buyArray: $0.buy!) }
+            return DataResponser.getOrderBook().map{ Mutation.setCoins(sell: $0.sell, buy: $0.buy) }
         }
     }
     
     // Mutation -> State
     func reduce(state: State, mutation: Mutation) -> State {
-        var state = state
+        
         
         switch mutation {
-        case let .setArray(sell,buy) :
-            state.arrays.0 = sell
-            state.arrays.1 = buy
+        case let .setCoins(sell, buy):
+            var newState = state
+            
+            if let sell = sell {
+                newState.sellItems.items = sell.reversed()
+                
+            }
+            
+            if let buy = buy{
+                newState.buyItems.items = buy
+            }
+            return newState
         }
         
-        return state
+        
+        
+        
     }
 }

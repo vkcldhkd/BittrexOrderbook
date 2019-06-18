@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E486BCBDAD49C92B8491DA96AC695667"
+               BlueprintIdentifier = "F7B27BE26B60249221FAE313DB03E254"
                BuildableName = "Pods_BittrexOrderbookUITests.framework"
                BlueprintName = "Pods-BittrexOrderbookUITests"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E486BCBDAD49C92B8491DA96AC695667"
+            BlueprintIdentifier = "F7B27BE26B60249221FAE313DB03E254"
             BuildableName = "Pods_BittrexOrderbookUITests.framework"
             BlueprintName = "Pods-BittrexOrderbookUITests"
             ReferencedContainer = "container:Pods.xcodeproj">

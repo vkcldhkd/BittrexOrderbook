@@ -10,8 +10,8 @@ target 'BittrexOrderbook' do
     pod 'ReactorKit'
     pod 'RxSwift'
     pod 'RxCocoa'
-
-
+    pod 'RxDataSources'
+    pod 'RxOptional'
 
   target 'BittrexOrderbookTests' do
     inherit! :search_paths
