@@ -7,4 +7,5 @@ Bittrex OrderBook을 보여주는 앱 입니다.(market=BTC-ETH)
 - 'ReactorKit'
 - 'RxSwift'
 - 'RxCocoa'
+- 'RxDataSources'
 - 'RxOptional'
